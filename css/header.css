@@ -1,0 +1,30 @@
+.header{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+    .contMenu{
+        display: flex;
+        flex-grow: 1;
+        justify-content:space-evenly;
+    }
+    .contMenu div{
+        font-size: large;
+        transition: .4s;
+        padding: 5px;
+    }
+        .contMenu div:hover{
+            cursor:pointer;
+            transform: translateY(-5px);
+        }
+
+    .title{
+        flex-grow: 4;
+    }
+    .title h2{
+        cursor: pointer;
+        display: inline-block;
+        margin: 5%;
+    }

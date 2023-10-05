@@ -1,0 +1,11 @@
+@import "normalize.css";
+@import "header.css";
+@import "main1.css";
+@import "main2.css";
+@import "footer.css";
+@import "aboutHeader.css";
+
+body{
+    font-family: 'Raleway', sans-serif;
+    /* box-sizing: border-box; */
+}

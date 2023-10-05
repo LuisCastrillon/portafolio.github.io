@@ -1,0 +1,88 @@
+.main2{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.div1Main2{
+    width: 35%;
+    height: 70vh;
+    view-timeline-name: --image;
+    view-timeline-axis:block;
+    animation-timeline: --image;
+    animation-name: desplazar;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+    
+    
+}
+.div1Main2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.div2Main2{
+    display: flex;
+    width: 35%;
+    height: 70vh;
+    justify-content: space-around;
+    flex-direction: column;
+    view-timeline-name: --image;
+    view-timeline-axis:block;
+    animation-timeline: --image;
+    animation-name: desplazar;
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+    /* background-color: #F2ECBE; */
+}
+    .div2Main2 *{
+        margin: 0px;
+    }
+
+.cntTarjetas{
+    display: flex;
+}
+.cntTarjetas h3{
+    margin-right: 10px;
+    background-color: #F2ECBE;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: #65451F;
+}
+
+.btnView{
+    align-self:baseline;
+    border-radius: 3px;
+}
+
+@keyframes desplazar{
+    from{
+        opacity: .4;
+        scale:70%;
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .main2{
+        /* min-height: 100vh; */
+        flex-direction: column;
+        padding: 2%;
+    }
+    .div1Main2{
+        width: 80%;
+        height: auto;
+
+    }
+    .div2Main2{
+        width: 80%;
+        height: 70vh;
+        /* overflow:scroll */
+    }
+}
