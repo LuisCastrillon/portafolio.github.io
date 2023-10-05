@@ -4,6 +4,7 @@ const aboutDiv = document.querySelector(".about")
 const workDiv = document.querySelector(".inicio")
 const linkFooter = document.querySelector(".linkFooter")
 const toInicio = document.querySelector(".toInicio")
+const curriculum = document.querySelector(".curriculum")
 // const correoFooterDiv = document.querySelector("#correoFooterDiv")
 // const linkdinFooterDiv = document.querySelector("#linkdinFooterDiv")
 // const curriculumFooterDiv = document.querySelector("#curriculumFooterDiv")
@@ -18,6 +19,7 @@ if(cntImg){
 // curriculumFooterDiv.addEventListener("click", curriculum)
 // instagramFooterDiv.addEventListener("click", ig)
 // correoFooterDiv.addEventListener("click", correo)
+curriculum.addEventListener("click", curriculumPage)
 toInicio.addEventListener("click", inicioPage)
 aboutDiv.addEventListener("click", aboutPage);
 workDiv.addEventListener("click", () => {
@@ -29,6 +31,10 @@ workDiv.addEventListener("click", () => {
 });
 
 
+
+function curriculumPage (){
+    window.open("./CV/LuisCastrillon.pdf", "_blank")
+}
 
 function inicioPage (){
     window.location.href = "index.html";
