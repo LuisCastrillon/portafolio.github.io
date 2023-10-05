@@ -5,6 +5,8 @@ const workDiv = document.querySelector(".inicio")
 const linkFooter = document.querySelector(".linkFooter")
 const toInicio = document.querySelector(".toInicio")
 const curriculum = document.querySelector(".curriculum")
+const menuDiv = document.querySelector(".menuDiv")
+const contMenu = document.querySelector(".contMenu")
 // const correoFooterDiv = document.querySelector("#correoFooterDiv")
 // const linkdinFooterDiv = document.querySelector("#linkdinFooterDiv")
 // const curriculumFooterDiv = document.querySelector("#curriculumFooterDiv")
@@ -19,6 +21,7 @@ if(cntImg){
 // curriculumFooterDiv.addEventListener("click", curriculum)
 // instagramFooterDiv.addEventListener("click", ig)
 // correoFooterDiv.addEventListener("click", correo)
+menuDiv.addEventListener("click", toggleDisplayMenu)
 curriculum.addEventListener("click", curriculumPage)
 toInicio.addEventListener("click", inicioPage)
 aboutDiv.addEventListener("click", aboutPage);
@@ -30,7 +33,14 @@ workDiv.addEventListener("click", () => {
     }
 });
 
-
+function toggleDisplayMenu(){
+    
+    if(contMenu.style.display == "flex"){
+        contMenu.style.display = "none"
+    }else{
+        contMenu.style.display = "flex"
+    }
+}
 
 function curriculumPage (){
     window.open("./CV/LuisCastrillon.pdf", "_blank")
