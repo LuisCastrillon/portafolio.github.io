@@ -7,6 +7,7 @@ const toInicio = document.querySelector(".toInicio")
 const curriculum = document.querySelector(".curriculum")
 const menuDiv = document.querySelector(".menuDiv")
 const contMenu = document.querySelector(".contMenu")
+const menuDivImg = document.querySelector(".menuDivImg")
 // const correoFooterDiv = document.querySelector("#correoFooterDiv")
 // const linkdinFooterDiv = document.querySelector("#linkdinFooterDiv")
 // const curriculumFooterDiv = document.querySelector("#curriculumFooterDiv")
@@ -37,8 +38,13 @@ function toggleDisplayMenu(){
     
     if(contMenu.style.display == "flex"){
         contMenu.style.display = "none"
+        document.body.style.overflow = "auto"
+        menuDivImg.src = "./img/menu.png"
+        
     }else{
         contMenu.style.display = "flex"
+        document.body.style.overflow = "hidden"
+        menuDivImg.src = "./img/x.png"
     }
 }
 
