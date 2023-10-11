@@ -84,5 +84,6 @@
         width: 80%;
         height: 70vh;
         /* overflow:scroll */
+        justify-content: space-evenly;
     }
 }
