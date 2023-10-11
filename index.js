@@ -39,12 +39,12 @@ function toggleDisplayMenu(){
     if(contMenu.style.display == "flex"){
         contMenu.style.display = "none"
         document.body.style.overflow = "auto"
-        menuDivImg.src = "./img/menu.png"
+        menuDivImg.src = "./img/whiteMenu.png"
         
     }else{
         contMenu.style.display = "flex"
         document.body.style.overflow = "hidden"
-        menuDivImg.src = "./img/x.png"
+        menuDivImg.src = "./img/whitex.png"
     }
 }
 
