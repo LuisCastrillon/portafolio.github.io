@@ -8,6 +8,8 @@ const curriculum = document.querySelector(".curriculum")
 const menuDiv = document.querySelector(".menuDiv")
 const contMenu = document.querySelector(".contMenu")
 const menuDivImg = document.querySelector(".menuDivImg")
+const menuDivImg1 = document.querySelector(".menuDivImg1")
+const menuDivImg2 = document.querySelector(".menuDivImg2")
 // const correoFooterDiv = document.querySelector("#correoFooterDiv")
 // const linkdinFooterDiv = document.querySelector("#linkdinFooterDiv")
 // const curriculumFooterDiv = document.querySelector("#curriculumFooterDiv")
@@ -36,16 +38,37 @@ workDiv.addEventListener("click", () => {
 
 function toggleDisplayMenu(){
     
-    if(contMenu.style.display == "flex"){
-        contMenu.style.display = "none"
-        document.body.style.overflow = "auto"
-        menuDivImg.src = "./img/whiteMenu.png"
+        if(menuDivImg1){
+            if(contMenu.style.display == "flex"){
+                contMenu.style.display = "none"
+                document.body.style.overflow = "hidden"
+                menuDivImg1.src = "./img/whiteMenu.png"
+                
+            }else{
+                contMenu.style.display = "flex"
+                document.body.style.overflow = "auto"
+                menuDivImg1.src = "./img/whitex.png"
+            }
+        }else{
+            if(contMenu.style.display == "flex"){
+                contMenu.style.display = "none"
+                document.body.style.overflow = "auto"
+                menuDivImg2.src = "./img/Menu.png"
+                
+            }else{
+                contMenu.style.display = "flex"
+                document.body.style.overflow = "hidden"
+                menuDivImg2.src = "./img/x.png"
+            }
+        }
         
-    }else{
-        contMenu.style.display = "flex"
-        document.body.style.overflow = "hidden"
-        menuDivImg.src = "./img/whitex.png"
-    }
+    
+
+
+
+
+
+    
 }
 
 function curriculumPage (){
@@ -58,6 +81,7 @@ function inicioPage (){
 
 function workPage(){
     workSeccion.scrollIntoView({ behavior: "smooth" })
+    document.body.style.overflow = "auto"
 }
 
 function aboutPage (){
