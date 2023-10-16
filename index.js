@@ -41,20 +41,19 @@ function toggleDisplayMenu(){
         if(menuDivImg1){
             if(contMenu.style.display == "flex"){
                 contMenu.style.display = "none"
-                document.body.style.overflow = "hidden"
+                document.body.style.overflow = "auto"
                 menuDivImg1.src = "./img/whiteMenu.png"
                 
             }else{
                 contMenu.style.display = "flex"
-                document.body.style.overflow = "auto"
                 menuDivImg1.src = "./img/whitex.png"
+                document.body.style.overflow = "hidden"
             }
-        }else{
+        }else if(menuDivImg2){
             if(contMenu.style.display == "flex"){
-                contMenu.style.display = "none"
-                document.body.style.overflow = "auto"
-                menuDivImg2.src = "./img/Menu.png"
-                
+                menuDivImg2.src = "./img/menu.png";
+                contMenu.style.display = "none";
+                document.body.style.overflow = "auto";
             }else{
                 contMenu.style.display = "flex"
                 document.body.style.overflow = "hidden"
