@@ -1,6 +1,7 @@
 .cntAbout{
     min-height: 88vh;
     display: flex;
+    margin-top: 12vh;
 }
 .cntInfMe{
 padding: 8vh;
